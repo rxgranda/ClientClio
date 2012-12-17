@@ -1,0 +1,5 @@
+c:\users\roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.exe
+c:\users\roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.pdb
+c:\users\roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.exe
+c:\users\roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.pdb

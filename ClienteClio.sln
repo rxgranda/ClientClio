@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteClioLogic", "ClienteClio\ClienteClioLogic.csproj", "{5C926698-B02D-4EB4-BFE8-9AEA8BCBC443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteClioService", "ServicioClienteClio\ClienteClioService.csproj", "{D5007E84-AA51-4F03-BDCB-E02B0A0372DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteClioView", "ClienteClioView\ClienteClioView.csproj", "{E3EB9DD4-E875-4ACF-BE7B-7E19E541184B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommunicationsClioLibrary", "ComunicacionesClienteClio\CommunicationsClioLibrary.csproj", "{5954977A-1E34-4A76-B9EF-ABA121D89133}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteClioMain", "ClienteClioMain\ClienteClioMain.csproj", "{C6C40D16-ADA5-47BA-B18F-1B7EDF0B26BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C926698-B02D-4EB4-BFE8-9AEA8BCBC443}.Debug|x86.ActiveCfg = Debug|x86
+		{5C926698-B02D-4EB4-BFE8-9AEA8BCBC443}.Debug|x86.Build.0 = Debug|x86
+		{5C926698-B02D-4EB4-BFE8-9AEA8BCBC443}.Release|x86.ActiveCfg = Release|x86
+		{5C926698-B02D-4EB4-BFE8-9AEA8BCBC443}.Release|x86.Build.0 = Release|x86
+		{D5007E84-AA51-4F03-BDCB-E02B0A0372DA}.Debug|x86.ActiveCfg = Debug|x86
+		{D5007E84-AA51-4F03-BDCB-E02B0A0372DA}.Debug|x86.Build.0 = Debug|x86
+		{D5007E84-AA51-4F03-BDCB-E02B0A0372DA}.Release|x86.ActiveCfg = Release|x86
+		{D5007E84-AA51-4F03-BDCB-E02B0A0372DA}.Release|x86.Build.0 = Release|x86
+		{E3EB9DD4-E875-4ACF-BE7B-7E19E541184B}.Debug|x86.ActiveCfg = Debug|x86
+		{E3EB9DD4-E875-4ACF-BE7B-7E19E541184B}.Debug|x86.Build.0 = Debug|x86
+		{E3EB9DD4-E875-4ACF-BE7B-7E19E541184B}.Release|x86.ActiveCfg = Release|x86
+		{E3EB9DD4-E875-4ACF-BE7B-7E19E541184B}.Release|x86.Build.0 = Release|x86
+		{5954977A-1E34-4A76-B9EF-ABA121D89133}.Debug|x86.ActiveCfg = Debug|x86
+		{5954977A-1E34-4A76-B9EF-ABA121D89133}.Debug|x86.Build.0 = Debug|x86
+		{5954977A-1E34-4A76-B9EF-ABA121D89133}.Release|x86.ActiveCfg = Release|x86
+		{5954977A-1E34-4A76-B9EF-ABA121D89133}.Release|x86.Build.0 = Release|x86
+		{C6C40D16-ADA5-47BA-B18F-1B7EDF0B26BC}.Debug|x86.ActiveCfg = Debug|x86
+		{C6C40D16-ADA5-47BA-B18F-1B7EDF0B26BC}.Debug|x86.Build.0 = Debug|x86
+		{C6C40D16-ADA5-47BA-B18F-1B7EDF0B26BC}.Release|x86.ActiveCfg = Release|x86
+		{C6C40D16-ADA5-47BA-B18F-1B7EDF0B26BC}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

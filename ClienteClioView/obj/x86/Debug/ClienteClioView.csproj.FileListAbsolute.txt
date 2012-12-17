@@ -1,0 +1,17 @@
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClioView.exe
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClioView.pdb
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClio.exe
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClio.pdb
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.ClioGUI.resources
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.Mensaje.resources
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.Properties.Resources.resources
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.exe
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.pdb
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClioView.exe.manifest
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClioView.application
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.TrustInfo.xml
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.exe.manifest
+C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioView\obj\x86\Debug\ClienteClioView.application
