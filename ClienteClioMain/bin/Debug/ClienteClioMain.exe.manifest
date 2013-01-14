@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
-  <asmv1:assemblyIdentity name="ClienteClioMain.exe" version="1.0.0.11" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
+  <asmv1:assemblyIdentity name="ClienteClioMain.exe" version="1.0.0.21" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="x86" type="win32" />
   <application />
   <entryPoint>
     <assemblyIdentity name="ClienteClioMain" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
@@ -42,51 +42,60 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClio.exe" size="3584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClio.exe" size="15360">
       <assemblyIdentity name="ClienteClio" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BrnJ6h+P3qJCb+E+9fU9j24F9Ok=</dsig:DigestValue>
+        <dsig:DigestValue>jEepR1oheBmJ3vF6fHFy0pO0TFU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClioMain.exe" size="4096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClioMain.exe" size="4608">
       <assemblyIdentity name="ClienteClioMain" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>32Z3msxqqYPsb/OjnTpc3Wau+TY=</dsig:DigestValue>
+        <dsig:DigestValue>UpkLma4KRpz+HWWz8iQBCM5vN4c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClioView.exe" size="385536">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClioView.exe" size="391680">
       <assemblyIdentity name="ClienteClioView" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>b0vhyCj3K6oS3qh9tw7qOSw6TQM=</dsig:DigestValue>
+        <dsig:DigestValue>RpuM0EpfIzw2bSOY28bZ07Es9RM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ComunicacionesClienteClio.exe" size="8192">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ComunicacionesClienteClio.exe" size="9216">
       <assemblyIdentity name="ComunicacionesClienteClio" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>/m47meQIDD8X2ZpxAhT/fD0AG/A=</dsig:DigestValue>
+        <dsig:DigestValue>tZyxvfdDbdQOAr3o8naFzs4MCks=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="ClienteClioMain.exe.config" size="3451">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>BmtkHvKkUGmtR+Cv/utdHeD6P64=</dsig:DigestValue>
+    </hash>
+  </file>
 </asmv1:assembly>

@@ -6,7 +6,8 @@ using System.Threading;
 using CommunicationsClioLibrary;
 
 
-namespace ClienteClioMain
+
+namespace ClienteClioService
 {
     public class Program: Caller
     {
@@ -24,6 +25,7 @@ namespace ClienteClioMain
         {
             new Program();
             ThreadStart param = delegate { server.StartListening(11001); };
+
             Thread serverThread = new Thread(param);
             serverThread.Start();
             while (!serverThread.IsAlive) ;
@@ -31,8 +33,20 @@ namespace ClienteClioMain
             guiThread.Start();
             while (!guiThread.IsAlive) ;                                      
         }
-        public override void Procesar(String mensaje){
+
+        public override String InfoPC() { return null; }
+        
+        public override void ApagarPC(){}
+
+
+        public override void Mensaje(String mensaje)
+        {
             ClioViewMain.MostrarMensaje(mensaje);
         }
+        public override byte[] Imagen() {
+            byte[] imagen = ClioViewMain.Imagen();
+            return imagen;
+        }
+
     }
 }

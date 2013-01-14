@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fa110c7b-cc34-4400-a6cf-c30e642788f5" name="Roger@ROGER-PC 2013-01-10 21:00:03" runUser="Roger-PC\Roger" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="eaffeeb8-8d2b-4e29-bbba-d3c228fbd653">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Roger_ROGER-PC 2013-01-10 21_00_03">
+      <DeploymentItem filename="C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioView\bin\Debug\ClienteClioView.exe" />
+      <DeploymentItem filename="C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioMain\bin\Debug\ClienteClioMain.exe" />
+      <DeploymentItem filename="C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.exe" />
+      <DeploymentItem filename="C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClio\bin\Debug\ClienteClio.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-10T21:00:03.7253774-05:00" queuing="2013-01-10T21:00:07.4905928-05:00" start="2013-01-10T21:00:07.7806094-05:00" finish="2013-01-10T21:00:09.7847240-05:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="RegistrarClienteTest" storage="c:\users\roger\documents\visual studio 2010\projects\clienteclio\clientecliotest\bin\debug\clientecliotest.dll" id="ae0ebb7e-07f1-8f6e-7233-44b808925c6a">
+      <Execution id="89a51615-3f88-4734-95ed-0e6e1cb8a116" />
+      <TestMethod codeBase="C:/Users/Roger/documents/visual studio 2010/Projects/ClienteClio/ClienteClioTest/bin/Debug/ClienteClioTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClienteClioTest.LogicaTest, ClienteClioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RegistrarClienteTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ae0ebb7e-07f1-8f6e-7233-44b808925c6a" executionId="89a51615-3f88-4734-95ed-0e6e1cb8a116" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="89a51615-3f88-4734-95ed-0e6e1cb8a116" testId="ae0ebb7e-07f1-8f6e-7233-44b808925c6a" testName="RegistrarClienteTest" computerName="ROGER-PC" duration="00:00:00.6179334" startTime="2013-01-10T21:00:07.8846153-05:00" endTime="2013-01-10T21:00:09.4767064-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="89a51615-3f88-4734-95ed-0e6e1cb8a116">
+      <Output>
+        <ErrorInfo>
+          <Message>Error de Assert.Inconclusive. Compruebe la exactitud de este método de prueba.</Message>
+          <StackTrace>   en ClienteClioTest.LogicaTest.RegistrarClienteTest() en C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioTest\LogicaTest.cs:línea 104
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

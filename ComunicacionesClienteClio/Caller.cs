@@ -7,6 +7,9 @@ namespace CommunicationsClioLibrary
 {
     public abstract class Caller
     {
-        public abstract void Procesar(String mensaje);
+        public abstract void Mensaje(String mensaje);
+        public abstract String InfoPC();
+        public abstract void ApagarPC();        
+        public abstract byte [] Imagen();
     }
 }

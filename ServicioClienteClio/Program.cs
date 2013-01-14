@@ -35,12 +35,22 @@ namespace ClienteClioService
 
 
         }
-        public override void Procesar(string mensaje)
-        {
-            ApagarPC();
-        }
         
-        public void ApagarPC()
+        
+        public override void Mensaje(String mensaje){ }
+        public override byte[] Imagen(){  return null;}
+
+        public override String InfoPC()
+        {
+           
+           String hdd=Supervisor.HardDrive();
+           String memory = Supervisor.Memory();
+           String cpu = Supervisor.CPU();
+           String proccess = Supervisor.SystemProcess();
+           return hdd + "%%" + memory + "%%"+cpu+ "%%"+proccess;
+        }
+
+        public override void ApagarPC()
         {
             System.Diagnostics.Process.Start("Shutdown", "-s -t 10");        
         }

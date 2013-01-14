@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ClioGUI));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.cerrarProgramaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarPcCLienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -59,6 +61,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.checkBox1);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.maskedTextBox1);
             this.panel2.Controls.Add(this.label2);
@@ -71,14 +74,23 @@
             this.panel2.TabIndex = 0;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(85, 159);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(144, 17);
+            this.checkBox1.TabIndex = 5;
+            this.checkBox1.Text = "¿ Inicia por primera vez ?";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(89, 159);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(0, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "<<Mensaje>>";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // maskedTextBox1
@@ -131,30 +143,39 @@
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
             this.notifyIcon1.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIcon1.Icon")));
-            this.notifyIcon1.Text = "notifyIcon1";
+            this.notifyIcon1.Text = "CLIO";
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
             // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cerrarProgramaToolStripMenuItem,
-            this.cerrarSesionToolStripMenuItem});
+            this.cerrarSesionToolStripMenuItem,
+            this.registrarPcCLienteToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(162, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(180, 92);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
             // 
             // cerrarProgramaToolStripMenuItem
             // 
             this.cerrarProgramaToolStripMenuItem.Name = "cerrarProgramaToolStripMenuItem";
-            this.cerrarProgramaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.cerrarProgramaToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cerrarProgramaToolStripMenuItem.Text = "Cerrar Programa";
             this.cerrarProgramaToolStripMenuItem.Click += new System.EventHandler(this.cerrarProgramaToolStripMenuItem_Click);
             // 
             // cerrarSesionToolStripMenuItem
             // 
             this.cerrarSesionToolStripMenuItem.Name = "cerrarSesionToolStripMenuItem";
-            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.cerrarSesionToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.cerrarSesionToolStripMenuItem.Text = "Cerrar Sesion";
             this.cerrarSesionToolStripMenuItem.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItem_Click);
+            // 
+            // registrarPcCLienteToolStripMenuItem
+            // 
+            this.registrarPcCLienteToolStripMenuItem.Name = "registrarPcCLienteToolStripMenuItem";
+            this.registrarPcCLienteToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
+            this.registrarPcCLienteToolStripMenuItem.Text = "Registrar Pc CLiente";
+            this.registrarPcCLienteToolStripMenuItem.Click += new System.EventHandler(this.registrarPcCLienteToolStripMenuItem_Click);
             // 
             // ClioGUI
             // 
@@ -162,7 +183,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(770, 474);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ClioGUI";
             this.Text = "Clio";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -190,6 +210,8 @@
         private System.Windows.Forms.ToolStripMenuItem cerrarProgramaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItem;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ToolStripMenuItem registrarPcCLienteToolStripMenuItem;
     }
 }
 

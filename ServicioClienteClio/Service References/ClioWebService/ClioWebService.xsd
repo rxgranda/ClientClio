@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://ClioWebService/" targetNamespace="http://ClioWebService/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="hello" type="tns:hello" />
+  <xs:element name="helloResponse" type="tns:helloResponse" />
+  <xs:element name="laboratoriosDisponibles" type="tns:laboratoriosDisponibles" />
+  <xs:element name="laboratoriosDisponiblesResponse" type="tns:laboratoriosDisponiblesResponse" />
+  <xs:element name="login" type="tns:login" />
+  <xs:element name="loginResponse" type="tns:loginResponse" />
+  <xs:element name="logout" type="tns:logout" />
+  <xs:element name="logoutResponse" type="tns:logoutResponse" />
+  <xs:element name="registrarClienteClio" type="tns:registrarClienteClio" />
+  <xs:element name="registrarClienteClioResponse" type="tns:registrarClienteClioResponse" />
+  <xs:element name="registrarPC" type="tns:registrarPC" />
+  <xs:element name="registrarPCResponse" type="tns:registrarPCResponse" />
+  <xs:complexType name="registrarPC">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="nombrePC" type="xs:string" />
+      <xs:element minOccurs="0" name="idLab" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarPCResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="hello">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="helloResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logout">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="logoutResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="laboratoriosDisponibles">
+    <xs:sequence />
+  </xs:complexType>
+  <xs:complexType name="laboratoriosDisponiblesResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="loginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarClienteClio">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="username" type="xs:string" />
+      <xs:element minOccurs="0" name="password" type="xs:string" />
+      <xs:element minOccurs="0" name="nombres" type="xs:string" />
+      <xs:element minOccurs="0" name="apellidos" type="xs:string" />
+      <xs:element minOccurs="0" name="matricula" type="xs:string" />
+      <xs:element minOccurs="0" name="cedula" type="xs:string" />
+      <xs:element minOccurs="0" name="email" type="xs:string" />
+      <xs:element minOccurs="0" name="facultad" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="registrarClienteClioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -42,17 +42,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClio.exe" size="3584">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClio.exe" size="15360">
       <assemblyIdentity name="ClienteClio" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>BrnJ6h+P3qJCb+E+9fU9j24F9Ok=</dsig:DigestValue>
+        <dsig:DigestValue>jEepR1oheBmJ3vF6fHFy0pO0TFU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="ClienteClio.exe.config" size="3915">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>5bGCy05ZEp5wQQqAKCLsUQfYSbk=</dsig:DigestValue>
+    </hash>
+  </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
     <application>
       <!-- Lista de todas las versiones de Windows con las que esta aplicación está diseñada para funcionar. Windows seleccionará automáticamente el entorno de mayor compatibilidad.-->

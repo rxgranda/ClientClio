@@ -9,12 +9,16 @@ using System.Windows.Forms;
 using ClienteClioLogic;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using System.Drawing.Imaging;
+using System.IO;
 
 namespace ClienteClioView
 {
     public partial class ClioGUI : Form
     {
         private bool logged = false;
+        private String username;
+        private String password;
         // Structure contain information about low-level keyboard input event
         [StructLayout(LayoutKind.Sequential)]
         private struct KBDLLHOOKSTRUCT
@@ -49,9 +53,12 @@ namespace ClienteClioView
             ProcessModule objCurrentModule = Process.GetCurrentProcess().MainModule;
             objKeyboardProcess = new LowLevelKeyboardProc(captureKey);
             ptrHook = SetWindowsHookEx(13, objKeyboardProcess, GetModuleHandle(objCurrentModule.ModuleName), 0);
+           
             InitializeComponent();
+            
             CheckForIllegalCrossThreadCalls = false;
-            this.TopMost = true;
+
+            //this.TopMost = true;
             
         }
         private void ClioGUI_Load(object sender, System.EventArgs e)
@@ -92,26 +99,65 @@ namespace ClienteClioView
 
         private void cerrarProgramaToolStripMenuItem_Click(object sender, EventArgs e)
         {
+
             Close();
         }
 
         private void cerrarSesionToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            bool res = Logica.logout();
             textBox1.Text = "";
             maskedTextBox1.Text = "";
             Show();
             this.WindowState = FormWindowState.Maximized;
             logged = false;
             
+
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (Logica.Login(textBox1.Text, maskedTextBox1.Text))
-            {
-                this.WindowState = FormWindowState.Minimized;
-                logged = true;
+            username=textBox1.Text;
+            password = maskedTextBox1.Text;
+            if (checkBox1.Checked) {
+                if (Logica.RegistrarCliente(textBox1.Text, maskedTextBox1.Text))
+                {
 
+                    if (Logica.Login(textBox1.Text, maskedTextBox1.Text))
+                    {
+                        if (!(username.Equals("admin") && password.Equals("admin")))
+                        {
+                            registrarPcCLienteToolStripMenuItem.Visible = false;
+                            cerrarProgramaToolStripMenuItem.Visible = false;
+                        }
+                        this.WindowState = FormWindowState.Minimized;
+                        logged = true;
+                        label3.Text = "";
+
+                    }
+
+                }
+                else
+                    label3.Text = "";
+                    label3.Text = "Credenciales no válidas, o el usuario ya se encuentra registrado";
+            }
+            else
+            {
+                if (Logica.Login(textBox1.Text, maskedTextBox1.Text))
+                {
+                    if (!(username.Equals("admin") && password.Equals("admin")))
+                    {
+                        registrarPcCLienteToolStripMenuItem.Visible = false;
+                        cerrarProgramaToolStripMenuItem.Visible = false;
+                    }
+                    this.WindowState = FormWindowState.Minimized;
+                    logged = true;
+                    label3.Text = "";
+
+                }
+                else
+                    label3.Text = "Credenciales no válidas";
             }
         }
 
@@ -127,7 +173,7 @@ namespace ClienteClioView
             {
                 KBDLLHOOKSTRUCT objKeyInfo = (KBDLLHOOKSTRUCT)Marshal.PtrToStructure(lp, typeof(KBDLLHOOKSTRUCT));
 
-                if (objKeyInfo.key != Keys.E && logged==false) // Disabling Windows keys
+                if (objKeyInfo.key == Keys.Escape && objKeyInfo.key == Keys.Shift && objKeyInfo.key == Keys.Control && logged == false) // Disabling Windows keys
                 {
 
                     return (IntPtr)1;
@@ -143,6 +189,44 @@ namespace ClienteClioView
             MessageBox.Show(e.KeyChar.ToString());
         }
 
+        public byte [] SaveScreenShot(string filename, ImageFormat format)
+        {
+            Bitmap screenShot = CaptureScreenShot();
+            MemoryStream ms = new MemoryStream();
+            screenShot.Save(ms, format);
+            return ms.ToArray();
+        }
 
+        /// <summary>
+        /// Saves a picture of the screen to a bitmap image.
+        /// </summary>
+        /// <returns>The saved bitmap.</returns>
+        private Bitmap CaptureScreenShot()
+        {
+            // get the bounding area of the screen containing (0,0)
+            // remember in a multidisplay environment you don't know which display holds this point
+            Rectangle bounds = Screen.GetBounds(Point.Empty);
+
+            // create the bitmap to copy the screen shot to
+            Bitmap bitmap = new Bitmap(bounds.Width, bounds.Height);
+
+            // now copy the screen image to the graphics device from the bitmap
+            using (Graphics gr = Graphics.FromImage(bitmap))
+            {
+                gr.CopyFromScreen(Point.Empty, Point.Empty, bounds.Size);
+            }
+
+            return bitmap;
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void registrarPcCLienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
           }
 }

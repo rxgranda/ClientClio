@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="116b9c70-d1c7-41e0-8719-7a572548e31c" name="Roger@ROGER-PC 2013-01-10 14:28:19" runUser="Roger-PC\Roger" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="eaffeeb8-8d2b-4e29-bbba-d3c228fbd653">
+    <Description>Esta es la configuración de pruebas predeterminada para una ejecución de pruebas local.</Description>
+    <Deployment userDeploymentRoot="C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Roger_ROGER-PC 2013-01-10 14_28_19">
+      <DeploymentItem filename="C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClio\bin\Debug\ClienteClio.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-10T14:28:19.3275178-05:00" queuing="2013-01-10T14:28:19.3345182-05:00" start="2013-01-10T14:28:19.3495190-05:00" finish="2013-01-10T14:28:22.0516736-05:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LoginTest" storage="c:\users\roger\documents\visual studio 2010\projects\clienteclio\clientecliotest\bin\debug\clientecliotest.dll" id="03b47658-bbe5-adf0-a507-1beddf2b27d6">
+      <Execution id="b1940d58-874c-4957-a698-9c858d20a1a2" />
+      <TestMethod codeBase="C:/Users/Roger/documents/visual studio 2010/Projects/ClienteClio/ClienteClioTest/bin/Debug/ClienteClioTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="ClienteClioTest.LogicaTest, ClienteClioTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LoginTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Resultados que no están en la lista" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="Todos los resultados cargados" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="03b47658-bbe5-adf0-a507-1beddf2b27d6" executionId="b1940d58-874c-4957-a698-9c858d20a1a2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="b1940d58-874c-4957-a698-9c858d20a1a2" testId="03b47658-bbe5-adf0-a507-1beddf2b27d6" testName="LoginTest" computerName="ROGER-PC" duration="00:00:01.9901172" startTime="2013-01-10T14:28:19.3705202-05:00" endTime="2013-01-10T14:28:21.9076653-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1940d58-874c-4957-a698-9c858d20a1a2">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -3,6 +3,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using System.IO;
 
 namespace CommunicationsClioLibrary
 {
@@ -10,7 +11,7 @@ namespace CommunicationsClioLibrary
     {
         // Thread signal.
         public static ManualResetEvent allDone = new ManualResetEvent(false);
-        private Caller caller;
+        private static Caller caller;
 
         public AsynchronousSocketListener(Caller o)
         {
@@ -121,8 +122,32 @@ namespace CommunicationsClioLibrary
                     Console.WriteLine("Read {0} bytes from socket. \n Data : {1}",
                         content.Length, content);
                     // Echo the data back to the client.
-                    Send(handler, content);
-                    caller.Procesar(content);
+                  
+                   String flag  = content.Substring(0, 6);                   
+
+                    if (flag.Equals("pcinfo")) {
+                        String info = caller.InfoPC();
+                        Send(handler, info);
+                    }else if (flag.Equals("captpa")){
+                        byte[] imagen = caller.Imagen();
+                        Send(handler, imagen);
+                    }else if (flag.Equals("apagpc")){
+                        ThreadStart param = delegate { caller.ApagarPC(); };
+                        Thread serverThread = new Thread(param);
+                        serverThread.Start();
+                        while (!serverThread.IsAlive) ;                              
+                        Send(handler, "exito");
+                    } else if (flag.Equals("echopc")){                                                      
+                        Send(handler, "echo");
+                    }else {
+                        ThreadStart param = delegate { caller.Mensaje(content.Substring(0,content.Length-7)); };
+                        Thread serverThread = new Thread(param);
+                        serverThread.Start();
+                        while (!serverThread.IsAlive) ;                        
+                        Send(handler, "exito");
+                    }
+                                       
+                    
                 }
                 else
                 {
@@ -142,6 +167,17 @@ namespace CommunicationsClioLibrary
             handler.BeginSend(byteData, 0, byteData.Length, 0,
                 new AsyncCallback(SendCallback), handler);
         }
+
+        private void Send(Socket handler, byte [] data)
+        {
+            // Convert the string data to byte data using ASCII encoding.
+            byte[] byteData = data;
+
+            // Begin sending the data to the remote device.
+            handler.BeginSend(byteData, 0, byteData.Length, 0,
+                new AsyncCallback(SendCallback), handler);
+        }
+
 
         private  void SendCallback(IAsyncResult ar)
         {

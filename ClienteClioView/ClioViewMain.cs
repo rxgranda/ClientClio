@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace ClienteClioView
 {
@@ -27,6 +28,10 @@ namespace ClienteClioView
             var ventana=new Mensaje(mensaje);
             Application.Run(ventana);
 
+        }
+        public static byte [] Imagen()
+        {
+            return glass.SaveScreenShot(@"c:\MyScreenShot.png", ImageFormat.Png);
         }
     }
 }

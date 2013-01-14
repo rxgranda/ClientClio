@@ -21,3 +21,206 @@ Los parámetros afectados son:
    logtoconsole = 
    logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
    assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Advertencia: el origen ClienteClio no está registrado en el equipo local.
+Se está quitando el servicio ClienteClio del sistema...
+Excepción durante la desinstalación del instalador System.ServiceProcess.ServiceInstaller.
+System.ComponentModel.Win32Exception: El servicio especificado no existe como servicio instalado
+Excepción al desinstalar. Esta excepción se pasará por alto y continuará el proceso de desinstalación. Sin embargo, puede que la aplicación no esté completamente desinstalada hasta que finalice la desinstalación.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Advertencia: el origen ClienteClio no está registrado en el equipo local.
+Se está quitando el servicio ClienteClio del sistema...
+Excepción durante la desinstalación del instalador System.ServiceProcess.ServiceInstaller.
+System.ComponentModel.Win32Exception: El servicio especificado no existe como servicio instalado
+Excepción al desinstalar. Esta excepción se pasará por alto y continuará el proceso de desinstalación. Sin embargo, puede que la aplicación no esté completamente desinstalada hasta que finalice la desinstalación.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+Creando el origen de EventLog ClienteClio en el registro Application...
+Deshaciendo ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Restaurando el registro de eventos al estado anterior para el origen ClienteClio.
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Desinstalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Quitando el origen de EventLog ClienteClio.
+Se está quitando el servicio ClienteClio del sistema...
+El servicio ClienteClio se ha quitado correctamente del sistema.
+Instalando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
