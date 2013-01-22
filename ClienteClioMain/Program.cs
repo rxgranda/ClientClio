@@ -5,7 +5,11 @@ using ClienteClioView;
 using System.Threading;
 using CommunicationsClioLibrary;
 
-
+/// <summary>
+///Autor: Roger Granda
+///Clase: Program implementa interface Caller
+///Descripción: Es la instancia principal del cliente CLio.
+///</summary>
 
 namespace ClienteClioService
 {

@@ -7,8 +7,15 @@ using ClienteClioLogic.WebServiceESPOL;
 using System.Xml;
 using System.Threading;
 
+/// <summary>
+///Autor: Roger Granda
+///Clase: Logica
+///Descripción: Esta clase se comunica mediante web service para realizar la lógia de autorización de cliente
+///</summary>
+
 namespace ClienteClioLogic
 {
+
     public class Logica
     {
         public static Boolean Login(String user, String password) {
@@ -134,8 +141,14 @@ namespace ClienteClioLogic
         }
         public static bool logout() {
              ClioService.ClioWebServiceClient cliente = new ClioService.ClioWebServiceClient();
-            bool res=cliente.logout("username");
-            cliente.Close();
+            bool res; 
+            try
+             {
+                 res = cliente.logout("username");
+                 cliente.Close();
+             }catch(Exception e){
+                 res = false;
+             }
             return res;
         }
         static void Main()

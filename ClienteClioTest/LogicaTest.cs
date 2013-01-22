@@ -7,6 +7,7 @@ namespace ClienteClioTest
     
     
     /// <summary>
+    /// Autor: Roger Granda
     ///Se trata de una clase de prueba para LogicaTest y se pretende que
     ///contenga todas las pruebas unitarias LogicaTest.
     ///</summary>
@@ -70,22 +71,22 @@ namespace ClienteClioTest
         [TestMethod()]
         public void LoginTest()
         {
-           // string user = "rxgranda"; // TODO: Inicializar en un valor adecuado
-            //string password ="aaa"; // TODO: Inicializar en un valor adecuado
-            //bool expected = true; // TODO: Inicializar en un valor adecuado
-            //bool actual;
-          //  actual = Logica.Login2(user, password);
-            Assert.AreEqual(1, 1);
+            string user = "rxgranda"; // TODO: Inicializar en un valor adecuado
+            string password ="aaa"; // TODO: Inicializar en un valor adecuado
+            long expected = 0; // TODO: Inicializar en un valor adecuado
+            long actual;
+            actual = Logica.Login2(user, password);
+            Assert.AreEqual(expected, actual);
             //Assert.Inconclusive("Compruebe la exactitud de este método de prueba.");
         }
         public void LoginTestEmpty()
         {
-            //string user="" ; // TODO: Inicializar en un valor adecuado
-            //string password="" ; // TODO: Inicializar en un valor adecuado
-            //bool expected = false; // TODO: Inicializar en un valor adecuado
-            //bool actual;
-            //actual = Logica.Login2(user, password);
-            Assert.AreEqual(1, 1);
+            string user = ""; // TODO: Inicializar en un valor adecuado
+            string password = ""; // TODO: Inicializar en un valor adecuado
+            long expected = 0; // TODO: Inicializar en un valor adecuado
+            long actual;
+            actual = Logica.Login2(user, password);
+            Assert.AreEqual(expected, actual);
             //Assert.Inconclusive("Compruebe la exactitud de este método de prueba.");
         }
 

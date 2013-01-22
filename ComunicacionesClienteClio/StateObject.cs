@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Net.Sockets;
+/// <summary>
+///Autor: Microsoft-> Disponible en social.msdn.com
+///Interface: StateObject
+///Descripción: Clase que proveee estado de sockets
+///</summary>
 
 namespace CommunicationsClioLibrary
 {

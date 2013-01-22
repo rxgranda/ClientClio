@@ -4,6 +4,11 @@ using System.Linq;
 using System.Windows.Forms;
 using System.Drawing.Imaging;
 
+/// <summary>
+///Autor: Roger Granda
+///Clase: ClienteClioViewMAIN
+///Descripción: Esta clase representa el objeto que llama a todas las interfaces gráficas
+///</summary>
 namespace ClienteClioView
 {
     public static class ClioViewMain

@@ -14,6 +14,8 @@ using System.IO;
 using System.Threading;
 using System.Timers;
 
+
+
 namespace ClienteClioView
 {
     public partial class ClioGUI : Form

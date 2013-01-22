@@ -4,6 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Management;
 using System.Diagnostics;
+/// <summary>
+///Autor: Roger Granda
+///Clase: Supervisor
+///Descripción: Representa la clases que optiene las características de hardware del Pc
+///</summary>
 
 namespace ClienteClioService
 {

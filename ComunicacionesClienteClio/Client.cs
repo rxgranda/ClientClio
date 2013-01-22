@@ -5,7 +5,11 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-
+/// <summary>
+///Autor: Microsoft-> Disponible en social.msdn.com
+///Interface: AsynchronousClient
+///Descripción: Clase que proveee servicios de sockets
+///</summary>
 namespace CommunicationsClioLibrary
 {
     public class AsynchronousClient

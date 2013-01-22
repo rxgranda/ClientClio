@@ -5,7 +5,11 @@ using System.ServiceProcess;
 using System.Text;
 using CommunicationsClioLibrary;
 using System.Threading;
-
+/// <summary>
+///Autor: Roger Granda
+///Clase: ClienteClioService  implementa interface Caller
+///Descripción: Esta clase representa el servicio windows instalado en el pc cliente
+///</summary>
 namespace ClienteClioService
 {
     public class Program:Caller
