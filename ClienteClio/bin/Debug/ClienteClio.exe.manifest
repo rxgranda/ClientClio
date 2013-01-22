@@ -42,24 +42,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClio.exe" size="15360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ClienteClio.exe" size="16896">
       <assemblyIdentity name="ClienteClio" version="0.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jEepR1oheBmJ3vF6fHFy0pO0TFU=</dsig:DigestValue>
+        <dsig:DigestValue>gc1HmVYtfLM7+9qr3a0D9U8ea88=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="ClienteClio.exe.config" size="3915">
+  <file name="ClienteClio.exe.config" size="3911">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-      <dsig:DigestValue>5bGCy05ZEp5wQQqAKCLsUQfYSbk=</dsig:DigestValue>
+      <dsig:DigestValue>l3Gs1T0sCQj8TO7NDvD8XAPfbAk=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

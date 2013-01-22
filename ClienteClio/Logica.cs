@@ -5,29 +5,88 @@ using System.Text;
 using ClienteClioLogic;
 using ClienteClioLogic.WebServiceESPOL;
 using System.Xml;
+using System.Threading;
 
 namespace ClienteClioLogic
 {
     public class Logica
     {
         public static Boolean Login(String user, String password) {
-            
+           
              bool authorization=false;
              if (user.Equals("") || password.Equals(""))
                  return false;
              if (user.Equals("admin") && password.Equals("admin"))
                  return true;
             try{
-                ClioService.ClioWebServiceClient cliente = new ClioService.ClioWebServiceClient();
-               authorization=cliente.login(user, password);
-                cliente.Close();
+                directorioEspolSoapClient clienteEspol = new directorioEspolSoapClient();
+                bool verificar=clienteEspol.autenticacion(user, password);
+                clienteEspol.Close();
+                if (verificar)
+                {
+                    ClioService.ClioWebServiceClient cliente = new ClioService.ClioWebServiceClient();
+                    authorization = cliente.login(user, password);
+                    cliente.Close();
+                    if (authorization)
+                        return true;
+                    else 
+                        return false;
+                }
+                else return false;
+                
+                
             }catch(Exception e){
                 e.StackTrace.ToString();
+                authorization = false;
             }
             
 
             return authorization;
         }
+
+        public static long Login2(String user, String password)
+        {
+
+            long authorization;
+            if (user.Equals("") || password.Equals(""))
+                return 0;
+            if (user.Equals("admin") && password.Equals("admin"))
+                return -10;
+            try
+            {
+                directorioEspolSoapClient clienteEspol = new directorioEspolSoapClient();
+                bool verificar = clienteEspol.autenticacion(user, password);
+                clienteEspol.Close();
+                if (verificar)
+                {
+                    ClioService.ClioWebServiceClient cliente = new ClioService.ClioWebServiceClient();
+                    authorization = cliente.login2(user);
+                    cliente.Close();
+                    if (authorization < 0) // no hay control de tiempo
+                        return -10;
+                    else if (authorization == 0) // no tiene tiempo disponible
+                        return 0;
+                    else
+
+                        return authorization; // tiene tiempo disponible
+                        
+                }
+                else 
+                    return 0;
+
+
+            }
+            catch (Exception e)
+            {
+                e.StackTrace.ToString();
+               authorization = 0;
+            }
+
+
+            return authorization;
+        }
+
+
         public static Boolean RegistrarCliente(String user, String password) {
             bool authorization = false;
             if (user.Equals("") || password.Equals(""))

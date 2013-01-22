@@ -23,7 +23,9 @@ namespace ClienteClioView
             glass = new ClioGUI();
             Application.Run(glass);
         }
-
+        public static void logout(){
+            glass.logout();
+        }
         public static void MostrarMensaje(String mensaje) {
             var ventana=new Mensaje(mensaje);
             Application.Run(ventana);

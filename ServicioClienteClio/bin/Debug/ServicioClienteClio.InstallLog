@@ -224,3 +224,16 @@ Los parámetros afectados son:
    logtoconsole = 
    logfile = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
    assemblypath = c:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando ensamblado 'C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe
+Instalando el servicio ClienteClio...
+El servicio ClienteClio se ha instalado correctamente.
+Creando el origen de EventLog ClienteClio en el registro Application...
+Confirmando ensamblado 'C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe'.
+Los parámetros afectados son:
+   logtoconsole = 
+   logfile = C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.InstallLog
+   assemblypath = C:\Users\Roger\Documents\Visual Studio 2010\Projects\ClienteClio\ServicioClienteClio\bin\Debug\ServicioClienteClio.exe

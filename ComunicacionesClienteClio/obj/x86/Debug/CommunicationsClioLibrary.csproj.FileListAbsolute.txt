@@ -8,3 +8,13 @@ C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesC
 C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.application
 C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.exe
 C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.exe.manifest
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.application
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.exe
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\bin\Debug\ComunicacionesClienteClio.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.TrustInfo.xml
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.exe.manifest
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.application
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.exe
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ComunicacionesClienteClio\obj\x86\Debug\ComunicacionesClienteClio.pdb

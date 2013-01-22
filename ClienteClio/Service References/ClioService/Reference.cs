@@ -15,14 +15,26 @@ namespace ClienteClioLogic.ClioService {
     [System.ServiceModel.ServiceContractAttribute(Namespace="http://ClioWebService/", ConfigurationName="ClioService.ClioWebService")]
     public interface ClioWebService {
         
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento username del espacio de nombres  no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/logoutRequest", ReplyAction="http://ClioWebService/ClioWebService/logoutResponse")]
+        ClienteClioLogic.ClioService.logoutResponse logout(ClienteClioLogic.ClioService.logoutRequest request);
+        
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento nombrePC del espacio de nombres  no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/registrarPCRequest", ReplyAction="http://ClioWebService/ClioWebService/registrarPCResponse")]
         ClienteClioLogic.ClioService.registrarPCResponse registrarPC(ClienteClioLogic.ClioService.registrarPCRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento username del espacio de nombres  no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/login2Request", ReplyAction="http://ClioWebService/ClioWebService/login2Response")]
+        ClienteClioLogic.ClioService.login2Response login2(ClienteClioLogic.ClioService.login2Request request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el espacio de nombres de partes de mensaje () no coincide con el valor predeterminado (http://ClioWebService/).
         [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/helloRequest", ReplyAction="http://ClioWebService/ClioWebService/helloResponse")]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
         ClienteClioLogic.ClioService.helloResponse hello(ClienteClioLogic.ClioService.helloRequest request);
+        
+        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento username del espacio de nombres  no está marcado para aceptar valores nil.
+        [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/loginRequest", ReplyAction="http://ClioWebService/ClioWebService/loginResponse")]
+        ClienteClioLogic.ClioService.loginResponse login(ClienteClioLogic.ClioService.loginRequest request);
         
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento username del espacio de nombres  no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/registrarClienteClioRequest", ReplyAction="http://ClioWebService/ClioWebService/registrarClienteClioResponse")]
@@ -31,14 +43,74 @@ namespace ClienteClioLogic.ClioService {
         // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento return del espacio de nombres  no está marcado para aceptar valores nil.
         [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/laboratoriosDisponiblesRequest", ReplyAction="http://ClioWebService/ClioWebService/laboratoriosDisponiblesResponse")]
         ClienteClioLogic.ClioService.laboratoriosDisponiblesResponse laboratoriosDisponibles(ClienteClioLogic.ClioService.laboratoriosDisponiblesRequest request);
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class logoutRequest {
         
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento username del espacio de nombres  no está marcado para aceptar valores nil.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/loginRequest", ReplyAction="http://ClioWebService/ClioWebService/loginResponse")]
-        ClienteClioLogic.ClioService.loginResponse login(ClienteClioLogic.ClioService.loginRequest request);
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="logout", Namespace="http://ClioWebService/", Order=0)]
+        public ClienteClioLogic.ClioService.logoutRequestBody Body;
         
-        // CODEGEN: Se está generando un contrato de mensaje, ya que el nombre de elemento username del espacio de nombres  no está marcado para aceptar valores nil.
-        [System.ServiceModel.OperationContractAttribute(Action="http://ClioWebService/ClioWebService/logoutRequest", ReplyAction="http://ClioWebService/ClioWebService/logoutResponse")]
-        ClienteClioLogic.ClioService.logoutResponse logout(ClienteClioLogic.ClioService.logoutRequest request);
+        public logoutRequest() {
+        }
+        
+        public logoutRequest(ClienteClioLogic.ClioService.logoutRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class logoutRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string username;
+        
+        public logoutRequestBody() {
+        }
+        
+        public logoutRequestBody(string username) {
+            this.username = username;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class logoutResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="logoutResponse", Namespace="http://ClioWebService/", Order=0)]
+        public ClienteClioLogic.ClioService.logoutResponseBody Body;
+        
+        public logoutResponse() {
+        }
+        
+        public logoutResponse(ClienteClioLogic.ClioService.logoutResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class logoutResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public logoutResponseBody() {
+        }
+        
+        public logoutResponseBody(bool @return) {
+            this.@return = @return;
+        }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -116,6 +188,74 @@ namespace ClienteClioLogic.ClioService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class login2Request {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="login2", Namespace="http://ClioWebService/", Order=0)]
+        public ClienteClioLogic.ClioService.login2RequestBody Body;
+        
+        public login2Request() {
+        }
+        
+        public login2Request(ClienteClioLogic.ClioService.login2RequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class login2RequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string username;
+        
+        public login2RequestBody() {
+        }
+        
+        public login2RequestBody(string username) {
+            this.username = username;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class login2Response {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="login2Response", Namespace="http://ClioWebService/", Order=0)]
+        public ClienteClioLogic.ClioService.login2ResponseBody Body;
+        
+        public login2Response() {
+        }
+        
+        public login2Response(ClienteClioLogic.ClioService.login2ResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class login2ResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public long @return;
+        
+        public login2ResponseBody() {
+        }
+        
+        public login2ResponseBody(long @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="hello", WrapperNamespace="http://ClioWebService/", IsWrapped=true)]
     public partial class helloRequest {
         
@@ -136,6 +276,78 @@ namespace ClienteClioLogic.ClioService {
         }
         
         public helloResponse(bool @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class loginRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="login", Namespace="http://ClioWebService/", Order=0)]
+        public ClienteClioLogic.ClioService.loginRequestBody Body;
+        
+        public loginRequest() {
+        }
+        
+        public loginRequest(ClienteClioLogic.ClioService.loginRequestBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class loginRequestBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
+        public string username;
+        
+        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
+        public string password;
+        
+        public loginRequestBody() {
+        }
+        
+        public loginRequestBody(string username, string password) {
+            this.username = username;
+            this.password = password;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
+    public partial class loginResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Name="loginResponse", Namespace="http://ClioWebService/", Order=0)]
+        public ClienteClioLogic.ClioService.loginResponseBody Body;
+        
+        public loginResponse() {
+        }
+        
+        public loginResponse(ClienteClioLogic.ClioService.loginResponseBody Body) {
+            this.Body = Body;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
+    public partial class loginResponseBody {
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
+        public bool @return;
+        
+        public loginResponseBody() {
+        }
+        
+        public loginResponseBody(bool @return) {
             this.@return = @return;
         }
     }
@@ -297,146 +509,6 @@ namespace ClienteClioLogic.ClioService {
         }
     }
     
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class loginRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="login", Namespace="http://ClioWebService/", Order=0)]
-        public ClienteClioLogic.ClioService.loginRequestBody Body;
-        
-        public loginRequest() {
-        }
-        
-        public loginRequest(ClienteClioLogic.ClioService.loginRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class loginRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string username;
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=1)]
-        public string password;
-        
-        public loginRequestBody() {
-        }
-        
-        public loginRequestBody(string username, string password) {
-            this.username = username;
-            this.password = password;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class loginResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="loginResponse", Namespace="http://ClioWebService/", Order=0)]
-        public ClienteClioLogic.ClioService.loginResponseBody Body;
-        
-        public loginResponse() {
-        }
-        
-        public loginResponse(ClienteClioLogic.ClioService.loginResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class loginResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool @return;
-        
-        public loginResponseBody() {
-        }
-        
-        public loginResponseBody(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class logoutRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="logout", Namespace="http://ClioWebService/", Order=0)]
-        public ClienteClioLogic.ClioService.logoutRequestBody Body;
-        
-        public logoutRequest() {
-        }
-        
-        public logoutRequest(ClienteClioLogic.ClioService.logoutRequestBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class logoutRequestBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public string username;
-        
-        public logoutRequestBody() {
-        }
-        
-        public logoutRequestBody(string username) {
-            this.username = username;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(IsWrapped=false)]
-    public partial class logoutResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Name="logoutResponse", Namespace="http://ClioWebService/", Order=0)]
-        public ClienteClioLogic.ClioService.logoutResponseBody Body;
-        
-        public logoutResponse() {
-        }
-        
-        public logoutResponse(ClienteClioLogic.ClioService.logoutResponseBody Body) {
-            this.Body = Body;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.Runtime.Serialization.DataContractAttribute(Namespace="")]
-    public partial class logoutResponseBody {
-        
-        [System.Runtime.Serialization.DataMemberAttribute(Order=0)]
-        public bool @return;
-        
-        public logoutResponseBody() {
-        }
-        
-        public logoutResponseBody(bool @return) {
-            this.@return = @return;
-        }
-    }
-    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface ClioWebServiceChannel : ClienteClioLogic.ClioService.ClioWebService, System.ServiceModel.IClientChannel {
     }
@@ -465,6 +537,19 @@ namespace ClienteClioLogic.ClioService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ClienteClioLogic.ClioService.logoutResponse ClienteClioLogic.ClioService.ClioWebService.logout(ClienteClioLogic.ClioService.logoutRequest request) {
+            return base.Channel.logout(request);
+        }
+        
+        public bool logout(string username) {
+            ClienteClioLogic.ClioService.logoutRequest inValue = new ClienteClioLogic.ClioService.logoutRequest();
+            inValue.Body = new ClienteClioLogic.ClioService.logoutRequestBody();
+            inValue.Body.username = username;
+            ClienteClioLogic.ClioService.logoutResponse retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).logout(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         ClienteClioLogic.ClioService.registrarPCResponse ClienteClioLogic.ClioService.ClioWebService.registrarPC(ClienteClioLogic.ClioService.registrarPCRequest request) {
             return base.Channel.registrarPC(request);
         }
@@ -479,6 +564,19 @@ namespace ClienteClioLogic.ClioService {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ClienteClioLogic.ClioService.login2Response ClienteClioLogic.ClioService.ClioWebService.login2(ClienteClioLogic.ClioService.login2Request request) {
+            return base.Channel.login2(request);
+        }
+        
+        public long login2(string username) {
+            ClienteClioLogic.ClioService.login2Request inValue = new ClienteClioLogic.ClioService.login2Request();
+            inValue.Body = new ClienteClioLogic.ClioService.login2RequestBody();
+            inValue.Body.username = username;
+            ClienteClioLogic.ClioService.login2Response retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).login2(inValue);
+            return retVal.Body.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         ClienteClioLogic.ClioService.helloResponse ClienteClioLogic.ClioService.ClioWebService.hello(ClienteClioLogic.ClioService.helloRequest request) {
             return base.Channel.hello(request);
         }
@@ -487,6 +585,20 @@ namespace ClienteClioLogic.ClioService {
             ClienteClioLogic.ClioService.helloRequest inValue = new ClienteClioLogic.ClioService.helloRequest();
             ClienteClioLogic.ClioService.helloResponse retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).hello(inValue);
             return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        ClienteClioLogic.ClioService.loginResponse ClienteClioLogic.ClioService.ClioWebService.login(ClienteClioLogic.ClioService.loginRequest request) {
+            return base.Channel.login(request);
+        }
+        
+        public bool login(string username, string password) {
+            ClienteClioLogic.ClioService.loginRequest inValue = new ClienteClioLogic.ClioService.loginRequest();
+            inValue.Body = new ClienteClioLogic.ClioService.loginRequestBody();
+            inValue.Body.username = username;
+            inValue.Body.password = password;
+            ClienteClioLogic.ClioService.loginResponse retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).login(inValue);
+            return retVal.Body.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -518,33 +630,6 @@ namespace ClienteClioLogic.ClioService {
             ClienteClioLogic.ClioService.laboratoriosDisponiblesRequest inValue = new ClienteClioLogic.ClioService.laboratoriosDisponiblesRequest();
             inValue.Body = new ClienteClioLogic.ClioService.laboratoriosDisponiblesRequestBody();
             ClienteClioLogic.ClioService.laboratoriosDisponiblesResponse retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).laboratoriosDisponibles(inValue);
-            return retVal.Body.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ClienteClioLogic.ClioService.loginResponse ClienteClioLogic.ClioService.ClioWebService.login(ClienteClioLogic.ClioService.loginRequest request) {
-            return base.Channel.login(request);
-        }
-        
-        public bool login(string username, string password) {
-            ClienteClioLogic.ClioService.loginRequest inValue = new ClienteClioLogic.ClioService.loginRequest();
-            inValue.Body = new ClienteClioLogic.ClioService.loginRequestBody();
-            inValue.Body.username = username;
-            inValue.Body.password = password;
-            ClienteClioLogic.ClioService.loginResponse retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).login(inValue);
-            return retVal.Body.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        ClienteClioLogic.ClioService.logoutResponse ClienteClioLogic.ClioService.ClioWebService.logout(ClienteClioLogic.ClioService.logoutRequest request) {
-            return base.Channel.logout(request);
-        }
-        
-        public bool logout(string username) {
-            ClienteClioLogic.ClioService.logoutRequest inValue = new ClienteClioLogic.ClioService.logoutRequest();
-            inValue.Body = new ClienteClioLogic.ClioService.logoutRequestBody();
-            inValue.Body.username = username;
-            ClienteClioLogic.ClioService.logoutResponse retVal = ((ClienteClioLogic.ClioService.ClioWebService)(this)).logout(inValue);
             return retVal.Body.@return;
         }
     }

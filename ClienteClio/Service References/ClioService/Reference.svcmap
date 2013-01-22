@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ddd01d11-ae2a-4da2-8c4d-7c70324a0a32" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7044db2f-52eb-453c-9b6d-576ce4c246d3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <EnableDataBinding>true</EnableDataBinding>
@@ -18,11 +18,11 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://servidorclio:8080/Clio2/ClioWebService?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8080/Clio/ClioWebService?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="ClioWebService.wsdl" MetadataType="Wsdl" ID="0e8b6f87-0b1b-45df-8369-c1781f2b5f94" SourceId="1" SourceUrl="http://servidorclio:8080/Clio2/ClioWebService?wsdl" />
-    <MetadataFile FileName="ClioWebService.xsd" MetadataType="Schema" ID="c76f6034-88f2-456b-987b-fddb71f063fd" SourceId="1" SourceUrl="http://servidorclio:8080/Clio2/ClioWebService?xsd=1" />
+    <MetadataFile FileName="ClioWebService.wsdl" MetadataType="Wsdl" ID="8e3e8caf-ab41-4196-920c-19e8d34f0ecd" SourceId="1" SourceUrl="http://localhost:8080/Clio/ClioWebService?wsdl" />
+    <MetadataFile FileName="ClioWebService.xsd" MetadataType="Schema" ID="d4b61735-ee7e-448a-b84d-40ee9455dbc3" SourceId="1" SourceUrl="http://localhost:8080/Clio/ClioWebService?xsd=1" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

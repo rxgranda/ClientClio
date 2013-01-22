@@ -2,20 +2,38 @@
 <definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://ClioWebService/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="ClioWebService" targetNamespace="http://ClioWebService/" xmlns="http://schemas.xmlsoap.org/wsdl/">
   <types>
     <xsd:schema>
-      <xsd:import schemaLocation="http://servidorclio:8080/Clio2/ClioWebService?xsd=1" namespace="http://ClioWebService/" />
+      <xsd:import schemaLocation="http://localhost:8080/Clio/ClioWebService?xsd=1" namespace="http://ClioWebService/" />
     </xsd:schema>
   </types>
+  <message name="logout">
+    <part name="parameters" element="tns:logout" />
+  </message>
+  <message name="logoutResponse">
+    <part name="parameters" element="tns:logoutResponse" />
+  </message>
   <message name="registrarPC">
     <part name="parameters" element="tns:registrarPC" />
   </message>
   <message name="registrarPCResponse">
     <part name="parameters" element="tns:registrarPCResponse" />
   </message>
+  <message name="login2">
+    <part name="parameters" element="tns:login2" />
+  </message>
+  <message name="login2Response">
+    <part name="parameters" element="tns:login2Response" />
+  </message>
   <message name="hello">
     <part name="parameters" element="tns:hello" />
   </message>
   <message name="helloResponse">
     <part name="parameters" element="tns:helloResponse" />
+  </message>
+  <message name="login">
+    <part name="parameters" element="tns:login" />
+  </message>
+  <message name="loginResponse">
+    <part name="parameters" element="tns:loginResponse" />
   </message>
   <message name="registrarClienteClio">
     <part name="parameters" element="tns:registrarClienteClio" />
@@ -29,26 +47,26 @@
   <message name="laboratoriosDisponiblesResponse">
     <part name="parameters" element="tns:laboratoriosDisponiblesResponse" />
   </message>
-  <message name="login">
-    <part name="parameters" element="tns:login" />
-  </message>
-  <message name="loginResponse">
-    <part name="parameters" element="tns:loginResponse" />
-  </message>
-  <message name="logout">
-    <part name="parameters" element="tns:logout" />
-  </message>
-  <message name="logoutResponse">
-    <part name="parameters" element="tns:logoutResponse" />
-  </message>
   <portType name="ClioWebService">
+    <operation name="logout">
+      <input wsam:Action="http://ClioWebService/ClioWebService/logoutRequest" message="tns:logout" />
+      <output wsam:Action="http://ClioWebService/ClioWebService/logoutResponse" message="tns:logoutResponse" />
+    </operation>
     <operation name="registrarPC">
       <input wsam:Action="http://ClioWebService/ClioWebService/registrarPCRequest" message="tns:registrarPC" />
       <output wsam:Action="http://ClioWebService/ClioWebService/registrarPCResponse" message="tns:registrarPCResponse" />
     </operation>
+    <operation name="login2">
+      <input wsam:Action="http://ClioWebService/ClioWebService/login2Request" message="tns:login2" />
+      <output wsam:Action="http://ClioWebService/ClioWebService/login2Response" message="tns:login2Response" />
+    </operation>
     <operation name="hello">
       <input wsam:Action="http://ClioWebService/ClioWebService/helloRequest" message="tns:hello" />
       <output wsam:Action="http://ClioWebService/ClioWebService/helloResponse" message="tns:helloResponse" />
+    </operation>
+    <operation name="login">
+      <input wsam:Action="http://ClioWebService/ClioWebService/loginRequest" message="tns:login" />
+      <output wsam:Action="http://ClioWebService/ClioWebService/loginResponse" message="tns:loginResponse" />
     </operation>
     <operation name="registrarClienteClio">
       <input wsam:Action="http://ClioWebService/ClioWebService/registrarClienteClioRequest" message="tns:registrarClienteClio" />
@@ -58,17 +76,18 @@
       <input wsam:Action="http://ClioWebService/ClioWebService/laboratoriosDisponiblesRequest" message="tns:laboratoriosDisponibles" />
       <output wsam:Action="http://ClioWebService/ClioWebService/laboratoriosDisponiblesResponse" message="tns:laboratoriosDisponiblesResponse" />
     </operation>
-    <operation name="login">
-      <input wsam:Action="http://ClioWebService/ClioWebService/loginRequest" message="tns:login" />
-      <output wsam:Action="http://ClioWebService/ClioWebService/loginResponse" message="tns:loginResponse" />
-    </operation>
-    <operation name="logout">
-      <input wsam:Action="http://ClioWebService/ClioWebService/logoutRequest" message="tns:logout" />
-      <output wsam:Action="http://ClioWebService/ClioWebService/logoutResponse" message="tns:logoutResponse" />
-    </operation>
   </portType>
   <binding name="ClioWebServicePortBinding" type="tns:ClioWebService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="logout">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="registrarPC">
       <soap:operation soapAction="" />
       <input>
@@ -78,7 +97,25 @@
         <soap:body use="literal" />
       </output>
     </operation>
+    <operation name="login2">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
     <operation name="hello">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="login">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -97,24 +134,6 @@
       </output>
     </operation>
     <operation name="laboratoriosDisponibles">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="login">
-      <soap:operation soapAction="" />
-      <input>
-        <soap:body use="literal" />
-      </input>
-      <output>
-        <soap:body use="literal" />
-      </output>
-    </operation>
-    <operation name="logout">
       <soap:operation soapAction="" />
       <input>
         <soap:body use="literal" />
@@ -126,7 +145,7 @@
   </binding>
   <service name="ClioWebService">
     <port name="ClioWebServicePort" binding="tns:ClioWebServicePortBinding">
-      <soap:address location="http://servidorclio:8080/Clio2/ClioWebService" />
+      <soap:address location="http://localhost:8080/Clio/ClioWebService" />
     </port>
   </service>
 </definitions>

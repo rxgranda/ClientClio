@@ -11,5 +11,6 @@ namespace CommunicationsClioLibrary
         public abstract String InfoPC();
         public abstract void ApagarPC();        
         public abstract byte [] Imagen();
+        public abstract void logout();     
     }
 }

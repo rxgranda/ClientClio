@@ -131,6 +131,11 @@ namespace CommunicationsClioLibrary
                     }else if (flag.Equals("captpa")){
                         byte[] imagen = caller.Imagen();
                         Send(handler, imagen);
+                    }
+                    else if (flag.Equals("logout"))
+                    {
+                        caller.logout();
+                        Send(handler, "exito");
                     }else if (flag.Equals("apagpc")){
                         ThreadStart param = delegate { caller.ApagarPC(); };
                         Thread serverThread = new Thread(param);
@@ -188,7 +193,7 @@ namespace CommunicationsClioLibrary
 
                 // Complete sending the data to the remote device.
                 int bytesSent = handler.EndSend(ar);
-                Console.WriteLine("Sent {0} bytes to client.", bytesSent);
+               // Console.WriteLine("Sent {0} bytes to client.", bytesSent);
 
                 handler.Shutdown(SocketShutdown.Both);
                 handler.Close();

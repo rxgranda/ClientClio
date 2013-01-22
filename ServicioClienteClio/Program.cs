@@ -54,5 +54,9 @@ namespace ClienteClioService
         {
             System.Diagnostics.Process.Start("Shutdown", "-s -t 10");        
         }
+        public override void logout()
+        {
+           
+        }
     }
 }

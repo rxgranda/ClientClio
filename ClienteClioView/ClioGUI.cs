@@ -11,6 +11,8 @@ using System.Runtime.InteropServices;
 using System.Diagnostics;
 using System.Drawing.Imaging;
 using System.IO;
+using System.Threading;
+using System.Timers;
 
 namespace ClienteClioView
 {
@@ -19,6 +21,8 @@ namespace ClienteClioView
         private bool logged = false;
         private String username;
         private String password;
+        private bool control;
+        System.Timers.Timer timer;
         // Structure contain information about low-level keyboard input event
         [StructLayout(LayoutKind.Sequential)]
         private struct KBDLLHOOKSTRUCT
@@ -65,6 +69,19 @@ namespace ClienteClioView
         {
             
         }
+
+        public void logout() {
+            bool res = Logica.logout();
+            textBox1.Text = "";
+            maskedTextBox1.Text = "";
+            label3.Text = "";
+            Show();
+
+            this.WindowState = FormWindowState.Maximized;
+            logged = false;
+            Thread a = new Thread(Refresh);
+        }
+
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             int ancho = this.ClientSize.Width;
@@ -107,14 +124,15 @@ namespace ClienteClioView
         {
             bool res = Logica.logout();
             textBox1.Text = "";
+            label3.Text="";
             maskedTextBox1.Text = "";
             Show();
             this.WindowState = FormWindowState.Maximized;
             logged = false;
-            
-
+            Thread a = new Thread(Refresh);
             
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -123,8 +141,8 @@ namespace ClienteClioView
             if (checkBox1.Checked) {
                 if (Logica.RegistrarCliente(textBox1.Text, maskedTextBox1.Text))
                 {
-
-                    if (Logica.Login(textBox1.Text, maskedTextBox1.Text))
+                    long res = Logica.Login2(textBox1.Text, maskedTextBox1.Text);
+                    if (res!=0)
                     {
                         if (!(username.Equals("admin") && password.Equals("admin")))
                         {
@@ -135,6 +153,13 @@ namespace ClienteClioView
                         logged = true;
                         label3.Text = "";
 
+                        if (res > 0) {
+                            ThreadStart param = delegate { controlTiempo(res); };
+                            Thread hilo = new Thread(param);
+                            hilo.Start();
+                          
+                        }
+
                     }
 
                 }
@@ -144,8 +169,8 @@ namespace ClienteClioView
             }
             else
             {
-                if (Logica.Login(textBox1.Text, maskedTextBox1.Text))
-                {
+               long res = Logica.Login2(textBox1.Text, maskedTextBox1.Text);
+               if (res!=0){
                     if (!(username.Equals("admin") && password.Equals("admin")))
                     {
                         registrarPcCLienteToolStripMenuItem.Visible = false;
@@ -154,11 +179,64 @@ namespace ClienteClioView
                     this.WindowState = FormWindowState.Minimized;
                     logged = true;
                     label3.Text = "";
+                    if (res > 0)
+                    {
+                        ThreadStart param = delegate { controlTiempo(res); };
+                        Thread hilo = new Thread(param);
+                        hilo.Start();
+                       
+                    }
 
                 }
                 else
-                    label3.Text = "Credenciales no válidas";
+                    label3.Text = "                        Credenciales no válidas";
             }
+           // Refresh();
+           Thread a= new Thread(Refresh);
+        }
+
+         void mostrarNotificacion(object sender, EventArgs e)
+
+        {
+            if (control)
+            {
+                timer.Stop();
+                timer.Enabled = false;
+                timer = null;
+                Mensaje ventana = new Mensaje("Su tiempo ha expirado. Se cerrara su sesión en 3 minutos");
+                
+                //Application.Run(ventana);
+                // ventana.Show();
+                //ThreadStart param = delegate { new Mensaje(); };
+                ThreadStart param = delegate { Application.Run(ventana); };
+
+                Thread serverThread = new Thread(param);
+                serverThread.Start();
+                
+                            
+                timer = new System.Timers.Timer();
+                timer.Elapsed += new ElapsedEventHandler(mostrarNotificacion);          
+                timer.Interval = 5000;             
+                timer.Enabled = true;                      
+                timer.Start();  
+                control=false;
+            }
+            else { 
+                timer.Stop();
+                timer.Enabled = false;
+                timer = null;                                   
+
+                logout();// Enable the timer            
+            }
+
+        }
+        public void controlTiempo(long time) {
+            control = true;
+            timer = new System.Timers.Timer();
+            timer.Elapsed += new ElapsedEventHandler(mostrarNotificacion);          
+            timer.Interval = time;             
+            timer.Enabled = true;                      
+            timer.Start();                                                      
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -225,6 +303,28 @@ namespace ClienteClioView
         }
 
         private void registrarPcCLienteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistrarPC registro = new RegistrarPC();
+            registro.Show();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }

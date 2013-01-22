@@ -12,3 +12,17 @@ C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioTest
 C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioMain.pdb
 C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioView.pdb
 C:\Users\Roger\documents\visual studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ComunicacionesClienteClio.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioTest.dll.config
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioTest.dll
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioTest.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClio.exe
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioMain.exe
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioView.exe
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ComunicacionesClienteClio.exe
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioMain.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClioView.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ClienteClio.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\bin\Debug\ComunicacionesClienteClio.pdb
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\obj\Debug\ClienteClioTest.dll
+C:\Users\Clio\Documents\Visual Studio 2010\Projects\ClienteClio\ClienteClioTest\obj\Debug\ClienteClioTest.pdb

@@ -36,8 +36,7 @@ namespace ClienteClioService
 
         public override String InfoPC() { return null; }
         
-        public override void ApagarPC(){}
-
+       
 
         public override void Mensaje(String mensaje)
         {
@@ -48,5 +47,15 @@ namespace ClienteClioService
             return imagen;
         }
 
+        public override void logout()
+        {
+            ClioViewMain.logout();
+        }
+        public override void ApagarPC()
+        {
+         
+        }
+
+       
     }
 }
